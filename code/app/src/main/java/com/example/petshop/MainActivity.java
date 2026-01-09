@@ -22,17 +22,20 @@ public class MainActivity extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
+
         Cat cat = new Cat("lucy");
         Dog dog = new Dog("chico");
         Scorpion scorpion = new Scorpion("Scorponok");
-        ArrayList<Pet> petList = new Arraylist<>();
+
+        ArrayList<Pet> petList = new ArrayList<>();
         petList.add(cat);
         petList.add(dog);
         petList.add(scorpion);
+
         ArrayList<Pettable> pettablePets = new ArrayList<>();
         pettablePets.add(cat);
         pettablePets.add(dog);
-        pettablePets.add(scorpion);
+        // pettablePets.add(scorpion); // will produce an error, so i didnt add.
 
 
     }
